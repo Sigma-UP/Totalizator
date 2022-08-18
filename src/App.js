@@ -1,11 +1,17 @@
+import { Grid } from '@mui/material';
+import { Container } from '@mui/system';
 import './App.css';
+import AllItems from './components/AllItems';
 import Header from './components/Header';
 
 const App = () => {
   return (
-    <div className="app-wrapper">
+    <Grid className="app-wrapper">
       <Header/>
-    </div>
+      <Container sx={{margin:'auto'}}>
+        <AllItems/>
+      </Container>
+    </Grid>
   );
 }
 
