@@ -4,7 +4,7 @@ import styles from './style.module.css';
 
 const PageHeadline = (props) => {
     return(
-        <Container item className={styles.header} >
+        <Container item className={styles.header} maxWidth='false'>
             <Box className={styles.centeredText}>
                 {props.text}
             </Box>
