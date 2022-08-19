@@ -1,13 +1,14 @@
 import { Box } from '@mui/material';
 import { Container } from '@mui/system';
 import styles from './style.module.css';
-const TaskHeader = () => {
+
+const PageHeadline = (props) => {
     return(
-        <Container item className={styles.header} sx={{maxWidth:'lg'}}>
+        <Container item className={styles.header} >
             <Box className={styles.centeredText}>
-                ALL TASKS
+                {props.text}
             </Box>
         </Container>
     )
 }
-export default TaskHeader;
+export default PageHeadline;
