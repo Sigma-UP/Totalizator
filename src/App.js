@@ -8,7 +8,7 @@ const App = () => {
   return (
     <Grid className="app-wrapper">
       <Header/>
-      <Container sx={{margin:'auto'}}>
+      <Container sx={{padding:'16px', paddingTop: '0px', display:'flex', justifyContent:'center', alignItems:'center'}}>
         <NewTask/>
       </Container>
     </Grid>
