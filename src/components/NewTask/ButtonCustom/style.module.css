@@ -1,12 +1,13 @@
-.customButton{
+.classicButton{
     height: 30px;
-    border-radius: 50px;
+    border-radius: 20px;
     color: rgba(120, 204, 54, 1);
-    border-color: rgba(120, 204, 54 1);
+    border-color: rgba(120, 204, 54, 1);
     background-color: rgba(199, 246, 191, 1);
     font-family: Inter;
 }
-.customButton:hover{
+
+.classicButton:hover{
     background-color: white;
     border-color: rgba(128, 217, 58, 1);
     color: rgba(128, 217, 58, 1);
