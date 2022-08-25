@@ -1,10 +1,25 @@
-import { Button} from '@mui/material';
-import classes from './style.module.css';
+import { Button, styled} from '@mui/material';
 
-const ButtonCustom = (props) => {
+
+const BCustom = styled(Button)`
+    height: 30px;
+    border-radius: 20px;
+    color: rgba(120, 204, 54, 1);
+    border-color: rgba(120, 204, 54, 1);
+    background-color: rgba(199, 246, 191, 1);
+    font-family: Inter;
+    
+    :hover{
+        background-color: white;
+        border-color: rgba(128, 217, 58, 1);
+        color: rgba(128, 217, 58, 1);
+    }
+`
+
+
+export default function ButtonCustom(props){
     return(
-        <Button variant="outlined" className={classes.customButton}>{props.text}</Button>
+        <BCustom variant='outlined'>{props.text}</BCustom>
     )
 }
-export default ButtonCustom;
  
