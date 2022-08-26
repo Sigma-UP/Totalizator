@@ -4,7 +4,7 @@ import TaskItem from './TaskItem';
 
 const AllTasks = () => {
     return(
-        <Grid container direction="column" pt={2} rowSpacing={2} sx={{maxWidth:'405px'}}>
+        <Grid container direction="column" pt={2} rowSpacing={2} sx={{maxWidth:'405px', fontFamily:'Inter'}}>
             <Grid item sx={{
                 display:'flex', justifyContent:'center', alignItems:'center'
             }}>
