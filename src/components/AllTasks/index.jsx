@@ -2,7 +2,7 @@ import { Grid } from '@mui/material';
 import PageHeadline from '../PageHeadline';
 import TaskItem from './TaskItem';
 
-const AllItems = () => {
+const AllTasks = () => {
     return(
         <Grid container direction="column" sx={{width:'100%', alignItems: 'center'}}>
             <PageHeadline text="All Tasks"/>
@@ -12,5 +12,5 @@ const AllItems = () => {
         </Grid>
     )
 }
-export default AllItems;
+export default AllTasks;
  
