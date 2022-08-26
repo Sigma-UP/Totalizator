@@ -5,7 +5,8 @@ import "./index.css"
 const Header = () =>{
     return(
         <div className='headerContainer'>
-            <HeaderItem/>
+            <HeaderItem path="/all"/>
+            <HeaderItem path="/new"/>
         </div>
     )
 }
