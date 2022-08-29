@@ -1,10 +1,11 @@
 import { IconButton } from "@mui/material";
-import { HomeIcon } from "../../Icons";
 import { Link } from "react-router-dom";
 
+
 const HeaderItem = (props) => {
-    return(
-      <Link to={props.path}>
+  const { path, children } = props;
+  return(
+      <Link to={path}>
           <IconButton 
           sx={{
           minWidth: 0,
@@ -13,7 +14,7 @@ const HeaderItem = (props) => {
           width: '40px',
           margin: '8px',
           }}>
-            <HomeIcon /> 
+            {children} 
           </IconButton>
         </Link>
     )
