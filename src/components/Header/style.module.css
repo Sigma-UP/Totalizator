@@ -1,8 +1,16 @@
 .headerContainer{
     background-color: white;
-    height: 50px;
+    height: 40px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.item{
+    color:grey;
+}
+
+.active{
+    color:rgba(120, 204, 54, 1);
 }

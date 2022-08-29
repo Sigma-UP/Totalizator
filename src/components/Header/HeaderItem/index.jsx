@@ -1,22 +1,23 @@
 import { IconButton } from "@mui/material";
-import { Link } from "react-router-dom";
-
+import { NavLink, useMatch } from "react-router-dom";
 
 const HeaderItem = (props) => {
   const { path, children } = props;
   return(
-      <Link to={path}>
+      <NavLink to={path}>
           <IconButton 
+          disabled={useMatch(path)}
           sx={{
           minWidth: 0,
           borderRadius:'50%',
           height: '40px',
           width: '40px',
           margin: '8px',
-          }}>
+          }}
+          >
             {children} 
           </IconButton>
-        </Link>
+      </NavLink>
     )
 }
 
