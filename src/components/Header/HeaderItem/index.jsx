@@ -10,8 +10,8 @@ const HeaderItem = (props) => {
           sx={{
           minWidth: 0,
           borderRadius:'50%',
-          height: '40px',
-          width: '40px',
+          height: '30px',
+          width: '30px',
           margin: '8px',
           }}
           >
