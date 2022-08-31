@@ -11,13 +11,10 @@ const AllTasks = () => {
                 <PageHeadline text="ALL TASKS"/>
             </Grid>
             <Grid item>
-                <TaskItem/>
+                <TaskItem headline="React" description="Finish learn React" deadline="12:40PM"/>
             </Grid>
             <Grid item>
-                <TaskItem/>
-            </Grid>
-            <Grid item>
-                <TaskItem/>
+                <TaskItem headline="Olya" description="I love you!" deadline="Endless"/>
             </Grid>
         </Grid>
     )
