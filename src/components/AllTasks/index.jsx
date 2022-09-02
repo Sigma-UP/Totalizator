@@ -1,8 +1,9 @@
 import { Grid } from '@mui/material';
 import PageHeadline from '../PageHeadline';
 import TaskItem from './TaskItem';
+import { tasksData } from '../mock/data';
 
-const AllTasks = () => {
+const AllTasks = (props) => {
     return(
         <Grid container direction="column" pt={2} rowSpacing={2} sx={{maxWidth:'405px', fontFamily:'Inter'}}>
             <Grid item sx={{
@@ -10,12 +11,18 @@ const AllTasks = () => {
             }}>
                 <PageHeadline text="ALL TASKS"/>
             </Grid>
-            <Grid item>
-                <TaskItem headline="React" description="Finish learn React" deadline="12:40PM"/>
-            </Grid>
-            <Grid item>
-                <TaskItem headline="Olya" description="I love you!" deadline="Endless"/>
-            </Grid>
+            {
+                tasksData
+                .map(data=>
+                    <Grid item>
+                        <TaskItem 
+                        headline = {data.headline} 
+                        description={data.description} 
+                        deadline={data.deadline}/>
+                    </Grid>
+                )
+            }
+
         </Grid>
     )
 }
