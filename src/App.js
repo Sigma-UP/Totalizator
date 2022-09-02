@@ -5,6 +5,7 @@ import Header from './components/Header';
 import NewTask from './components/NewTask';
 import AllTasks from './components/AllTasks';
 import './App.css';
+import { tasksData } from './components/mock/data';
 
 const App = (props) => {
   return (
@@ -14,7 +15,7 @@ const App = (props) => {
         <Container sx={{padding:'16px', paddingTop: '0px', display:'flex', justifyContent:'center', alignItems:'center'}}>
           <Routes>
             <Route path="/new" element={<NewTask />} />
-            <Route path="/all" element={<AllTasks />} />
+            <Route path="/all" element={<AllTasks data={tasksData}/>} />
           </Routes>  
         </Container>
       </Grid>

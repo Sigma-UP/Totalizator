@@ -1,7 +1,6 @@
 import { Grid } from '@mui/material';
 import PageHeadline from '../PageHeadline';
 import TaskItem from './TaskItem';
-import { tasksData } from '../mock/data';
 
 const AllTasks = (props) => {
     return(
@@ -12,13 +11,13 @@ const AllTasks = (props) => {
                 <PageHeadline text="ALL TASKS"/>
             </Grid>
             {
-                tasksData
-                .map(data=>
+                props.data
+                .map(task=>
                     <Grid item>
                         <TaskItem 
-                        headline = {data.headline} 
-                        description={data.description} 
-                        deadline={data.deadline}/>
+                        headline = {task.headline} 
+                        description={task.description} 
+                        deadline={task.deadline}/>
                     </Grid>
                 )
             }
