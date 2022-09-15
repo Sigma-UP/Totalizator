@@ -12,8 +12,8 @@ const App = (props) => {
         <Header/>
         <Container sx={{padding:'16px', paddingTop: '0px', display:'flex', justifyContent:'center', alignItems:'center'}}>
           <Routes>
-            <Route path="/new" element={<NewTask />} />
-            <Route path="/all" element={<AllTasks data={props.state.tasksData}/>} />
+            <Route path="/new" element={<NewTask addTask={props.addTask} newTask={props.newTask}/>} />
+            <Route path="/all" element={<AllTasks data={props.state.tasksData.tasks}/>} />
           </Routes>  
         </Container>
       </Grid>

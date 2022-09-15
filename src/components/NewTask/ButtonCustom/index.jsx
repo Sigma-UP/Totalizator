@@ -19,7 +19,7 @@ const BCustom = styled(Button)`
 
 export default function ButtonCustom(props){
     return(
-        <BCustom variant='outlined'>{props.text}</BCustom>
+        <BCustom variant='outlined' onClick={props.onClick}>{props.text}</BCustom>
     )
 }
  
